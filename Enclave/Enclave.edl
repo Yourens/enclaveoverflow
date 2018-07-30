@@ -39,7 +39,7 @@ enclave {
     };
 
     trusted {
-        public void* enclave_get_address_of_ocall_print();
-        public void ecall_process_secret();
+        public uint64_t enclave_get_address_of_ocall_print();
+        public void ecall_process_secret_sloppily();
     };
 };
